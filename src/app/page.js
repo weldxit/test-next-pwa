@@ -1,7 +1,14 @@
+// 'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
+// import { useEffect } from 'react'
 
 export default function Home() {
+  console.log('service worker')
+  // useEffect(()=>{
+    // console.log(navigator, 'navigator')
+   
+  // },[])
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -93,3 +100,4 @@ export default function Home() {
     </main>
   )
 }
+
