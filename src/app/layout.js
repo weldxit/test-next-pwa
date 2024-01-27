@@ -20,7 +20,12 @@ console.log('layout')
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel='manifest' href='/manifest.json'/>
+      </head>
+      <body className={inter.className}>
+      <button id="install-button" style={{display:'none'}}>Install App</button>
+        {children}</body>
     </html>
   )
 }
