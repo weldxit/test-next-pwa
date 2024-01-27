@@ -1,4 +1,4 @@
-'use client'
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -16,7 +16,7 @@ if('serviceWorker' in navigator){
     console.log('Service worker registration failed:',error)
   })
 }
-console.log('layout')
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
